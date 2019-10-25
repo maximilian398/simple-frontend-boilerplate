@@ -1,2 +1,54 @@
-# Include your project-specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# System files
+# ------------
+
+Icon
+.DS_Store
+
+# Temporary files
+# ---------------
+
+/media/*
+!/media/index.html
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Cache Files
+# ---------------
+
+/site/cache/*
+!/site/cache/index.html
+
+# Accounts
+# ---------------
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Sessions
+# ---------------
+
+/site/sessions/*
+!/site/sessions/index.html
+
+# License
+# ---------------
+/site/config/.license
+
+# Retoru Logs
+# ---------------
+/site/logs/retour/*
+
+# E-Mail Configuration
+# ---------------
+/site/config/config.*.php
+!/site/config/config.smtp.sample.php
+
+# NPM stuff
+# ---------------
+.npmrc
+package-lock.json 
+/node_modules
+
+/site/logs/retour.sqlite
