@@ -52,3 +52,5 @@ package-lock.json
 /node_modules
 
 /site/logs/retour.sqlite
+
+/_dist/*
