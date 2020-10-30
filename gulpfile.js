@@ -267,6 +267,15 @@ gulp.task('js-core', async () => {
   });
 });
 
+gulp.task('modernizr',  async () => {
+  if (!fs.existsSync(`${dirs.dist}/js/vendor/`)){
+    fs.mkdirSync(`${dirs.dist}/js/vendor/`);
+  }
+
+  modernizr.build(modernizrConfig, (code) => {
+    fs.writeFile(`${dirs.dist}/js/vendor/modernizr-${pkg.devDependencies.modernizr}.min.js`, code, done);
+  });
+});
 
 // Build task
 gulp.task('build', gulp.series(
@@ -281,6 +290,7 @@ gulp.task('build', gulp.series(
   'js-fontawesome',
   'webpack',
   'images',
+  'modernizr',
   'fonts',
   'video',
   'php'
