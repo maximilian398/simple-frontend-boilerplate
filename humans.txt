@@ -3,6 +3,8 @@
 
 # TEAM
 
+    Max - founder - @nobody
+    Josef - developer - @nobody
     <name> -- <role> -- <twitter>
 
 # THANKS
