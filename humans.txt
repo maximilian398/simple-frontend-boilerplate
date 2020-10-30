@@ -3,8 +3,8 @@
 
 # TEAM
 
-    Max - founder - @nobody
-    Josef - developer - @nobody
+    Max - founder - @maximilian398
+    Josef - developer - @josef9283
     <name> -- <role> -- <twitter>
 
 # THANKS
