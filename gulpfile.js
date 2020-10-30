@@ -313,6 +313,10 @@ gulp.task('watch', function () {
   gulp.watch(Paths.F_JS + '*.js', gulp.series('js-fontawesome', 'reload'));
   //gulp.watch(Paths.F_JS + '*.js', gulp.series('svg-fontawesome', 'reload'));
   gulp.watch(Paths.FONTS, gulp.series('fonts', 'reload'));
+  gulp.watch(Paths.F_JS, gulp.series('images', 'reload'));
+  gulp.watch(Paths.F_JS, gulp.series('fonts', 'reload'));
+  gulp.watch(Paths.B_JS, gulp.series('bootstrap', 'reload'));
+  gulp.watch(Paths.F_JS, gulp.series('fonts', 'reload'));
 });
 
 gulp.task('default', gulp.series('clean', 'build', 'watch'));
