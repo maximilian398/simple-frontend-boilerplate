@@ -4,9 +4,25 @@
   "description": "Starterkit",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com"
+    "url": "https://github.com"
   },
   "author": "Josef",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "IE 11"
+  ],
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
